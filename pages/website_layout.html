@@ -1,0 +1,75 @@
+<!DOCTYPE html>
+<html lang="en">
+    <head>
+        <meta charset = "UTF-8">
+        <link rel="shortcut icon" href="..\assets\BL_logo_square_png.png">
+        <title>CodePen - Demo Flexbox 3</title> 
+        <style>
+           * {
+              box-sizing: border-box; 
+             }
+             body {
+              display: flex;
+              min-height: 100vh;
+              flex-direction: row;
+              margin: 0;
+             }
+             .outer-col-1 {
+              background: #D7E8D4;
+              flex: 1;
+             }
+             .outer-col-2 {
+              display: flex;
+              flex-direction: column;
+              flex: 5;
+            }
+            .inner-row {
+              display: flex;
+              flex-direction: row;
+           }
+           .inner-col {
+            flex: 4;
+           }
+           .inner-row article {
+           min-height: 60vh;
+           }
+            .inner-row aside {
+           background: beige;
+           flex: 1;
+          }
+          header{
+            text-align: center;
+          }
+          header, footer {
+           background: yellowgreen;
+           height: 20vh;
+          }
+           header, footer, article, nav, aside {
+          padding: 1em;
+          }
+        </style>
+    </head>
+    <body>
+        <nav class="outer-col-1"><p>Navigation</p>
+            <p><a href ="https://www.google.co.in/">google</a></p>
+            <p><a href ="https://mail.yahoo.com/">yahoo</a></p>
+        </nav>
+        <div class="outer-col-2">
+            <header><h1>Welcome To History Lesson</h1></header>
+          <div class="inner-row">
+            <div class="inner-col">
+              <article><h2>Historical Facts</h2>
+               <p>Kolkata (formerly Calcutta) is the capital of India's West Bengal state. Founded as an East India Company trading post, it was India's capital under the British Raj from 1773–1911</p>
+               <p>The foundation stone of New Delhi was laid by Emperor George V during the Delhi Durbar of 1911. It was designed by British architects Sir Edwin Lutyens and Sir Herbert Baker. The new capital was inaugurated on 13 February 1931, by Viceroy and Governor-General of India Lord Irwin. </p>
+            </article>
+                <footer>Footer</footer>
+            </div>
+              <aside><h3>Reference Books</h3>
+                <p>Discovery of India by Jawaharlal Nehru</p>
+                <p>Freedom at Midnight by Dominique Lapierre and Larry Collins</p>
+                <p>The Argumentative Indian by Amartya Sen</p>
+              </aside>
+          </div>
+        </div>
+    </body>
+</html>
